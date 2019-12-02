@@ -1,0 +1,41 @@
+\documentclass{book}
+\usepackage{xspace}
+\usepackage{url}
+\usepackage{microtype}
+\begin{document}
+	\newcommand{\cedula}{My ID is 80926390\xspace}
+	\title{My English Notes}
+	\author{Felipe Tibatá}
+	\date{November 15,2019}
+	\maketitle
+\section{This is an example of head}
+This is an \emph{example}
+Difference between \textit{italic} and \textsl{slanted}\\
+now text in \textbf{bold}
+now text in \textsc{small caps}.
+
+\section{\textsf{This is another example of head}}
+another kind of \texttt{testing different text}
+
+\section{\sffamily This is another test}
+We will go to see
+
+\section{Generate ID from Command}
+\cedula\ was generated creating a new command with the sentences  \texttt{new command}\\
+This is another example using \textit{new command} but now using the library called \textit{xspace}
+which is useful for add automatic space after insert the automated text created with 
+\textit{new command}, with that packaged isn't necessary insert a backslash after the command
+for instance \cedula inserted sentence.
+
+\section{Dealing with URLS}
+For write URL is necessary use \texttt{url}, there are many different types of URL for instance:
+\url{adfada.com}
+\textbf{I'm currently in page ... I don't remember now jajajaj, something related with boxes..}
+
+\section{Division's Columns}
+For this I have to use \texttt{$\backslash$quad$\backslash$parbox\{xxcm\}\{text\}} or I can also use the \mbox{environment}\textit{minipage}.
+
+\section{break lines with Hyphenation}
+This is a long text and a simple example of how can I use \texttt{hyphenation} but for some strange reason doesn't work, works if I add $\backslash$- in the place where I want the word cut and down to the next line , \texttt{stat$\backslash$-ionary}, theoretically the word cuts after the \texttt{t}  and starts a new line with \texttt{ionary}.
+\end{document}
+
