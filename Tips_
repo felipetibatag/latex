@@ -1,0 +1,10 @@
+Cuando tenga problemas con la biblio, del  archivo bibtex... pues si saca errores es porque por alguna razón
+en IEEE, no se en los demas, es necesario referenciar si o si primero y despues si compilar, por algo raro cuándo se agrega el archivo de referencias y no se ha referenciado nada saca error al compilar, para evitar eso usar esto en la segunda linea del documento:
+
+
+\def\endthebibliography{%
+  \def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
+  \endlist
+}
+
+Y por alguna extraña razón.. después de superado ese error se puede borrar la anterior línea y ya queda funcionando :D
