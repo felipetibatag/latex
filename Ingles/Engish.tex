@@ -1,23 +1,717 @@
 \documentclass{elegantbook}
-% title info
-\title{Title}
-\subtitle{Subtitle is here}
-% bio info
-\author{Your Name}
-\institute{XXX University}
-\date{\today}
-% extra info
-\version{1.00}
-\extrainfo{Victory won\rq t come to us unless we go to it. --- M. Moore}
-
+\usepackage{soul}
+\usepackage{tikzsymbols}
+\usepackage{hyperref}
+\usepackage{multirow}
 \begin{document}
-	
-\maketitle
 \tableofcontents
 \mainmatter
 \hypersetup{pageanchor=true}
-% add preface chapter here if needed
-\chapter{Example Chapter Title}
-The content of chapter one.
+\chapter{Basic One}
+    \section{Numbers}
+    \begin{center}
+        \begin{tabular}{c c c}
+            \hline
+            \# & Cardinal & Ordinal\\
+            \hline
+            1&One&First\\
+            2&Two&Second\\
+            3&Three&Third\\
+            4&Four&Fourth\\
+            5&Five&Fifth\\
+            6&Six&Sixth\\
+            7&Seven&Seventh\\
+            8&Eight&Eighth\\
+            9&Nine&Ninth\\
+            10&Ten&Tenth\\
+            11&Eleven&Eleventh\\
+            12&Twelve&Twelfth\\
+            13&Thirteen&Thirteenth\\
+            14&Fourteen&Fourteenth\\
+            15&Fifteen&Fifteenth\\
+            16&Sixteen&Sixteenth\\
+            17&Seventeen&Seventeenth\\
+            18&Eighteen&Eightteenth\\
+            19&Nineteen&Nineteenth\\
+            20&Twenty&Twentieth\\
+            21&Tweny-one&Twenty-First\\
+            30&Thirty&Thirtieth\\
+            40&Forty&Fortieth\\
+            50&Fifty&Fiftieth\\
+            60&Sixty&Sixtieth\\
+            70&Seventy&Seventieth\\
+            80&Eigthy&Eightieth\\
+            90&Ninety&Ninetieth\\
+            100&One hundred&Hundredth\\
+            500&Five hundred&Five Hundredth\\
+            1.000&One thousand&Thousandth\\
+            1.500&One thousand five hundred&One Thousandth five Hundredth\\
+            100.000&One hundred thousand&hundred Thousandth\\
+            1000.000&One million&Millionth\\
+        \end{tabular}
+    \end{center}
+    \begin{note}
+        \textbf{Million} is ok but  never \st{Millions}
+    \end{note}
+    \section{WH Questions}
+    \begin{corollary}{Syntax WH Questions}{}
+        WH + V+ \dSmiley[2]+ C
+    \end{corollary}
 
-\end{document}
+    \begin{tabular}{|c|c|}
+        \hline
+        What&Normally used for talking about \textbf{things}\\
+        \hline
+        When&Normally used for talking about \textbf{time}\\
+        \hline
+        Where&Normally used for talking about \textbf{places}\\
+        \hline
+        Why&Normally used for talking about \textbf{rasons}\\
+        \hline
+        How&Normally used for talking about \textbf{manner}\\
+        \hline
+        Which&Normally used for talking about \textbf{Options}\\
+        \hline
+        Who&Normally used for talking about \textbf{people}\\
+        \hline
+    \end{tabular}
+    \\
+    \begin{example}
+        \begin{enumerate}
+            \item What is our favorite car's brand?
+            \item Which is your favorite color?
+            \item Where are you?
+            \item Who is you mother?
+            \item What is your name mother?
+            \item How are you today?
+            \item Is he your brother?
+            \item Are they teachers?
+            \item Is it a nice car?
+            \item Are we ready for the job?
+            \item Is she a good person?
+        \end{enumerate}
+    \end{example}
+    \section{Countries and Nationalities}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Country}&\textbf{Nationality}\\
+        \hline
+        Egypt&Egyptian\\
+        \hline
+        Brazil&Brazilian\\
+        \hline
+        India&Indian\\
+        \hline
+        Australia&Australian\\
+        \hline
+        Colombia&Colombian\\
+        \hline
+        Canada&Canadian\\
+        \hline
+        Korea&Korean\\
+        \hline
+        Malasya&Malasyan\\
+        \hline
+        Scotland&Scotish\\
+        \hline
+        Ireland&Irish\\
+        \hline
+        Vietnam&Vietnamese\\
+        \hline
+        Greece&Greek\\
+        \hline
+        Germany&German\\
+        \hline
+    \end{tabular}
+    \begin{note}
+        To see more countries in \url{http://www.esldesk.com/vocabulary/countries}
+    \end{note}
+    \section{Regular Plural Forms}
+    \subsection{Nouns Ending In Sibilants}
+    \begin{property}
+        Sounds that sound as S as \emph{ch,sh,x,z,s,o}
+    \end{property}
+    \begin{property}
+        If the noun end in \emph{-che} add \emph{-es}
+    \end{property}
+    \begin{property}
+        If the noun end in \emph{-e} add \emph{-s}
+    \end{property}
+    \begin{center}
+        \begin{tabular}{c|c}
+            \textbf{Singular}&\textbf{Plural}\\
+            \hline
+            One bo\underline{x}&two box\underline{es}\\
+            a Swuitcas\underline{e}&Two suitcase\underline{s}\\
+            a Sandwi\underline{ch}&Two Sandwich\underline{es}\\
+            g\underline{o}&go\underline{es}\\
+        \end{tabular}
+    \end{center}
+    \subsection{Nouns Ending In \emph{y}}
+    \subsubsection{\emph{y} After a \emph{\underline{Consonant}}}
+    \begin{property}
+        Change \emph{y} to \emph{i} and then add \emph{es}
+    \end{property}
+    \begin{center}
+        \begin{tabular}{c|c}
+            \textbf{Singular}&\textbf{Plural}\\
+            \hline
+            a cit\underline{y}&Two cit\underline{ies}\\
+            a lad\underline{y}&Two lad\underline{ies}\\
+        \end{tabular}
+    \end{center}
+    \subsubsection{\emph{y} After a \emph{\underline{Vowel}}}
+    \begin{property}
+        Add \emph{s}
+    \end{property}
+    \begin{center}
+        \begin{tabular}{c|c}
+            \textbf{Singular}&\textbf{Plural}\\
+            \hline
+            a bo\underline{y}&Two boy\underline{s}\\
+            a da\underline{y}&Two day\underline{s}\\
+        \end{tabular}
+    \end{center}
+    \subsection{Nouns Ending in \emph{f} or \emph{fe}}
+    \begin{property}
+        Add \emph{s}.
+    \end{property}
+    \begin{property}
+        Add \emph{s} for words ending in \emph{ff}.
+    \end{property}
+    \begin{center}
+        \begin{tabular}{c|c}
+            \textbf{Singular}&\textbf{Plural}\\
+            \hline
+            a roo\underline{f}&Two roof\underline{s}\\
+            a cli\underline{ff}&Two cliff\underline{s}\\
+            a sheri\underline{ff}&Two sheriff\underline{s}\\
+        \end{tabular}
+    \end{center}
+    \subsection{Substitute with \emph{ves}}
+    \begin{center}
+        \begin{tabular}{c|c}
+            \textbf{Singular}&\textbf{Plural}\\
+            \hline
+            cal\underline{f}&cal\underline{ves}\\
+            hal\underline{f}&hal\underline{ves}\\
+            li\underline{fe}&li\underline{ves}\\
+            wi\underline{fe}&wi\underline{ves}\\
+            yoursel\underline{f}&yoursel\underline{ves}
+        \end{tabular}
+    \end{center}
+    \subsection{Nound ending in \emph{o}}
+    \begin{note}
+        To this there isn't a rule when add \textbf{s} or \textbf{es}.
+    \end{note}
+    \begin{property}
+        Add \emph{-s} for this words:
+    \end{property}
+    \begin{center}
+        \begin{tabular}{c|c}
+            \textbf{Singular}&\textbf{Plural}\\
+            \hline
+            A disco&Two disco\underline{s}\\
+            A piano&Two piano\underline{s}\\
+            A photo&Two photo\underline{s}\\
+        \end{tabular}
+    \end{center}
+    \begin{property}
+        Add \emph{-es} for this words:
+    \end{property}
+    \begin{center}
+        \begin{tabular}{c|c}
+            \textbf{Singular}&\textbf{Plural}\\
+            \hline
+            A tomato&Two tomato\underline{es}\\
+            A potato&Two potato\underline{es}\\
+            A hero&Two hero\underline{es}\\
+        \end{tabular}
+    \end{center}
+    \section{Irregular Plural Forms}
+    \begin{center}
+        \begin{tabular}{c|c}
+            \textbf{Singular}&\textbf{Plural}\\
+            \hline
+            a man&two men\\
+            a woman&two women\\
+            a child&two children\\
+            a mouse&two mice\\
+            a tooth&two teeth\\
+            a goose&two geese\\
+            a foot&two feet\\
+            a ox&two oxen\\
+        \end{tabular}
+    \end{center}
+    \section{Don't Change}
+    \begin{center}
+        \begin{tabular}{l|l}
+            \textbf{Singular}&\textbf{Plural}\\
+            \hline
+            1 sheep&2 sheep\\
+            1 deer&2 deer\\
+            1 fish&2 fish\\
+            1 series&2 series\\
+            1 species&2 species\\
+        \end{tabular}
+    \end{center}
+
+    \begin{note}
+        \textbf{a} and \textbf{an} ONLY use for SINGULAR:
+        \begin{itemize}
+            \item \textbf{a} car
+            \item \textbf{an} apple
+            \item \textbf{an} orange
+        \end{itemize}
+    \end{note}
+
+    \section{Demostrative Pronouns}
+    \begin{center}
+        \begin{tabular}{l|l}
+            \textbf{Demostrative Pronouns}&\textbf{Significado}\\
+            \hline
+            This&esto/este/esta\\
+            That&eso/esa/ese - aquél/aqello/aquella\\
+            These&estos/estas\\
+            Those&esos/esas - aquellos/aquellas
+        \end{tabular}
+        \begin{tabular}{c|c|c}
+            &\textbf{Near}&\textbf{Far}\\
+            \hline
+            \textbf{Singular}&\textbf{This} is an apple&\textbf{That} is an apple\\
+            \textbf{Plural}&\textbf{These} are apples&\textbf{Those} are apples\\
+        \end{tabular}
+    \end{center}
+    \section{Possessive Pronouns And Adjectives}
+        \begin{tabular}{|c|c|c|c|c|c}
+            \hline
+            \textbf{Subject}&\textcolor{red}{\textbf{Possessive Adjective}}&\textbf{Significado}&\textcolor{red}{\textbf{Possessive Pronoun}}&\textbf{Significado}\\
+            \hline
+            I&My&Mi(s)&Mine&Mio(s)\\
+            You&Your&Mi(s)&Yours&tuyo/suyo\\
+            He&His&sus/de él&His&Suyo(s)\\
+            She&Her&sus/de ella&Hers&Suyo(s)\\
+            It&Its&su(s)&Its&Su\\
+            We&Our&nuestro/de nosotros&Ours&nuestro\\
+            They&Their&sus/de ellos&Theirs&suyo(s)\\
+            \hline
+        \end{tabular}
+        \begin{corollary}{}{}
+            Possessive Adjective: \textbf{Después} de uno de ellos va sí o sí un sustantivo\\
+            Possessive Pronoun: El sustantivo va \textbf{antes}, después de alguno de ellos \textbf{no} va nada.
+        \end{corollary}
+        \begin{example}\\
+            \textsl{Possessive Adjective}
+            \begin{itemize}
+                \item This is \textbf{my} car.
+                \item This is \textbf{your} book.
+            \end{itemize}
+            \textsl{Possessive Pronoun}
+            \begin{itemize}
+                \item This car is \textbf{mine}.
+                \item This is house is \textbf{yours}.
+            \end{itemize}
+        \end{example}
+        \section{Reflexive Pronouns}
+        \begin{tabular}{|l|l|}
+            \hline
+            myself&yo mismo, a mi\\
+            himself&él mismo, a si mismo\\
+            herself&ella misma, a si misma\\
+            itself&el mismo, a si mismo\\
+            yourselves&ustedes mismos\\
+            yourself&tú mismo, usted mismo\\
+            ourselves&nosotros mismos\\
+            themselves&ellos mismos\\
+            \hline
+        \end{tabular}
+        \section{Present Simple Do-Does}
+        \begin{corollary}{}{}
+            WH + Do/Does + \dSmiley[2] + V + C
+            
+        \end{corollary}
+        Describing habits or rutines.\\
+        \begin{tabular}{|c|c|c|}
+            \hline
+            &\textbf{Positive}&\textbf{Negative}\\
+            \hline
+            I&\multirow{4}{10em}{Listen to the music on the bus}&\multirow{4}{10em}{Don't listen to music}\\
+            We\\
+            You\\
+            They\\
+            \hline
+            He&\multirow{3}{10em}{Listen\underline{s} to the music on the bus}&\multirow{3}{10em}{Doesn't listen to music}\\
+            She\\
+            It\\
+            \hline
+        \end{tabular}
+
+        \begin{tabular}{|c|c|c|}
+            \hline
+            \multicolumn{3}{|c|}{Interrogative}\\
+            \hline
+            &\textbf{Positive Answer}&\textbf{Negative Answer}\\
+            \hline
+            Do we listen to music?&Yes,We do&No,We don't\\
+            \hline
+            Does he listen to music?&Yes, He does&No, He doesn't\\
+            \hline
+        \end{tabular}
+        \\
+        \begin{example}
+            \begin{enumerate}
+                \item Do you like your English classes?
+                \item Do they go running every day?
+                \item Do you chat with friends a lot?
+                \item Do you like eating junk food?
+                \item Do they watch football on TV?
+                \item Do you go to the cinema a lot?
+            \end{enumerate}
+        \end{example}
+
+        \begin{example}
+            \begin{itemize}
+                \item My brother works on monday
+                \item [?] Does my brother work on monday ?
+                \item [+]yes, he does
+                \item [-]no, he doesn't
+                \item [-]no, he does not
+                \item The store opens early
+                \item [?] Does the store open early ?
+                \item [+]yes, it does
+                \item [-]no, it doesn't
+                \item [-]no, it does not
+                \item [?]What does time it start ?
+                \item [?]Where does it leave from ?
+                \item [?]When does the tour finish ?
+                \item [?]How much does it ?
+                \item [?]Do you take credit cards ?
+            \end{itemize}
+        \end{example}
+        \section{Daily Routines}
+        \begin{center}
+            \begin{tabular}{|l|l|}
+                \hline
+                Get up&Levantarse\\
+                Get home&Llegar a casa\\
+                Leave home&Salir de casa\\
+                Go to bed&Ir a la cama\\
+                Have lunch&Almorzar\\
+                Finish work&Terminar la jornada laboral\\
+                Start work&Empezar a trabajar\\
+                Have dinner&Comer/cenar\\
+                Have breakfast&Desayunar\\
+                \hline
+            \end{tabular}
+        \end{center}
+        \section{What Time Is It?}
+        \textcolor{red}{\textbf{insertart imagen de horas, reloj}}\\
+        \begin{tabular}{cl}
+            8:15&Quarter past eight\\
+            9:20&Twenty past nine\\
+            10:35&Twenty-five to eleven\\
+            5:55&Five to six\\
+            4:30&Half past four\\
+        \end{tabular}
+        \section{Making Request}
+        \begin{itemize}
+            \item Can I have a sandwich please?
+            \item Could I have a single to Sidney please? \emph{Más formal}
+        \end{itemize}
+        \section{Family}
+        \textcolor{red}{\textbf{insertar imagen de parentesco, familia}}
+        \section{Have/Has Got}
+        \begin{corollary}{Syntax}{}
+            Have + \dSmiley[2] + got + c\\
+            Has + \dSmiley[2] + got + c
+            \textbf{\\I have blue eyes == I have got blue eyes}
+        \end{corollary}
+        \begin{tabular}{|c|l|l|}
+            \hline
+            &\textbf{Positive}&\textbf{Negative}\\
+            \hline
+            I&\multirow{4}{10em}{Have got a phone}&They haven't got any sisters\\
+            We&&He hasn't got a car\\
+            You&&He hasn't any car\\
+            They\\
+            \hline
+        \end{tabular}
+
+        \vspace{1em}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            \multicolumn{3}{|c|}{Interrogative}\\
+            \hline
+            &Positive&Negative\\
+            \hline
+            Have we got any cousin?&yes, we have&no, we haven't\\
+            \hline
+        \end{tabular}
+        \\
+        \begin{example}
+            \\\emph{Negative}
+            \begin{itemize}
+                \item [+]I \textcolor{red}{have} blue eyes
+                \item [+]I \textcolor{red}{have got} blue eyes
+                \item [?] \textcolor{red}{\textbf{Do}} I \textcolor{red}{\textbf{have}} blue eyes?
+                \item [?] \textcolor{red}{\textbf{Have}} I \textcolor{red}{\textbf{got}} blue eyes?
+                \item [-]I \textcolor{red}{\textbf{don't have}} blue eyes.
+                \item [-]I \textcolor{red}{\textbf{haven't got}} a blue eyes.
+                \item [+]You have a new car
+                \item [-]You \textcolor{red}{\textbf{don't have}} a new car.
+                \item [-]You \textcolor{red}{\textbf{haven't got}} a new car.
+                \item [+]He \textcolor{red}{\textbf{has}} got a headache
+                \item [?]\textcolor{red}{\textbf{Does}} He \textcolor{red}{\textbf{have}} a headache?
+                \item [?]\textcolor{red}{\textbf{Has}} he \textcolor{red}{\textbf{got}} a headache?
+                \item [-]He \textcolor{red}{\textbf{doesn't have}} a headache \textit{\small{-Forma Américana}}
+                \item [-]You \textcolor{red}{\textbf{hasn't got}} a headache \textit{\small{-Forma Británica}}
+            \end{itemize}
+        \end{example}
+        \begin{note}
+            \\En \textbf{Americano}:
+            I don't have a car
+            \\En \textbf{Británico} (más formal):
+            I haven't got a car.
+            \\Ojo con el uso del \textbf{does} o \textbf{doesn't} el verbo cambia, ejemplo el has pasa a have.
+            \\La contracción solo se puede usar si va con el \textbf{got}, si no lo lleva entonces toca escribir el have completo
+            \\\textcolor{green}{I've got blue eyes} (bien) \textcolor{red}{I've blue eyes}(mal)
+        \end{note}
+        \section{Adverbs Of Frecuency}
+        \begin{corollary}{Syntax}{}
+            \dSmiley[2] + adverb + main verb\\
+            \dSmiley[2] + Aux + adverb + main verb\\
+            \dSmiley[2] + BE  + adverb
+        \end{corollary}
+        \textcolor{red}{\textbf{Pegar imagen de adverbios de frecuencia}}
+        \begin{property}
+            Normalmente va antes del verbo a menos que exista TO-BE
+        \end{property}
+        \begin{property}
+            Los siguientes pueden ir al comiezo, antes del \dSmiley[2]:
+            \begin{itemize}
+                \item Usually
+                \item Normally
+                \item Frequently
+                \item Generally
+                \item Occasionally
+                \item Sometimes
+            \end{itemize}
+        \end{property}
+        \begin{property}
+            Los siguientes \textbf{\textcolor{red}{NO}} pueden ir al comiezo, antes del \dSmiley[2].
+            \begin{itemize}
+                \item Always
+                \item Hardly ever
+                \item Seldom
+                \item Rarely
+                \item Never
+            \end{itemize}
+        \end{property}
+        \begin{example}
+            \begin{itemize}
+                \item I always work on monday
+                \item She never goes to the gym
+                \item I have always done my work
+                \item I am normally busy at work
+                \item He is always happy
+                \item Occasionally I have pancakes for breakfast
+                \item Normally our English class is in the morning
+                \item I always get up early
+                \item Do you always have breakfast in your house?
+                \item How often do you have breakfast in your house?
+                \item Does he often drink milk?
+                \item How often does he drink milk?
+                \item Do they frequently go to the gym?
+                \item How frequently do they go to the gym?
+                \item Do they normally work on weekends?
+                \item How often do they work on weekends?
+                \item Do you study English very often?
+                \item How often do you study English?
+            \end{itemize}
+        \end{example}
+        \section{Time Expressions}
+        \begin{property}
+            Van al inicio o final de una frase, normalmente al final.
+        \end{property}
+        \begin{property}
+            \emph{Once} y \emph{Twice} van sin el \emph{times}.
+        \end{property}
+        \begin{itemize}
+            \item Every day/month/year
+            \item Once/Twice a day/week/month/year 
+            \item Three \textcolor{red}{\textbf{times}} a day/week/month/year
+            \item Four  \textcolor{red}{\textbf{times}} a day/week/month/year
+            \item In the Morning/Evening/Afternoon
+            \item At night
+            \item On monday
+            \item In July
+        \end{itemize}
+        \section{There is - There are}
+        \begin{property}
+            There is -> Hay, existencia, Singular
+        \end{property}
+        \begin{property}
+            There are -> Mismo significado pero en Plural
+        \end{property}
+        \begin{property}
+            Any normalmente para plural o negativo
+        \end{property}
+        \vspace{1em}
+        \begin{tabular}{|ccc|}
+            \hline
+            \textbf{Positive}&\textbf{Negative}&\textbf{Interrogative}\\
+            \hline
+            There is a table&Isn't a table&Is there a table?\\
+            There are two tables&Aren't \underline{any} table&Are there \emph{any} desk?\\
+            \hline
+        \end{tabular}
+        \section{Prepositions}
+        \begin{property}
+            Normalmente no es ncesario poner el "of", lo tienen incluido, solo algunos si lo necesitan.
+        \end{property}
+        \begin{itemize}
+            \item Under
+            \item Behind
+            \item Above
+            \item In front of
+            \item Next to
+            \item Between
+            \item In
+            \item On
+        \end{itemize}
+        \subsection{Prepositions in time \emph{IN, ON, AT}}
+        \subsubsection*{In}
+        \begin{property}
+            Contención ó adentro
+        \end{property}
+        \begin{property}
+            Use \emph{in} with \textbf{seasons} as a \emph{winter}
+        \end{property}
+        \begin{property}
+            Use \emph{in} with \textbf{months}
+        \end{property}
+        \subsubsection*{On}
+        \begin{property}
+            Superfice ó encima
+        \end{property}
+        \begin{property}
+            Use \emph{on} with special days, \emph{on easter monday}
+        \end{property}
+        \begin{property}
+            Use \emph{on} when you write the fulldate, \emph{on 4th July, 1998}
+        \end{property}
+        \subsubsection*{At}
+        \begin{property}
+            Ubicación o grado de medida
+        \end{property}
+        \begin{property}
+            Use with the time of the day, \emph{at 4pm}
+        \end{property}
+        \begin{property}
+            Use with festivals, \emph{at Christmas}
+        \end{property}
+
+        \begin{example}
+            \begin{itemize}
+                \item Water boils \textbf{at} $100^0C$
+                \item Wait for me \textbf{at} 4pm
+                \item I'm \textbf{at} the corner
+                \item I have coins \textbf{in} my pocket
+                \item Lucy is \textbf{in} Chicago
+                \item I left my keys \textbf{on} the table
+                \item She left a note \textbf{on} the desk
+            \end{itemize}
+        \end{example}
+
+
+        \section{Can \emph{for possibility}}
+        \begin{property}
+            Si uso el \textcolor{red}{\textbf{CAN}} entonces el verbo que esta al lado va normal, sin conjugarlo, en infinitivo, en forma base.
+        \end{property}
+        \newpage
+        \section{A, An, Some, Any}
+        \begin{property}
+            \emph{a} and \emph{an} use with \textbf{singular, countable nouns}
+        \end{property}
+        \begin{property}
+            \emph{Some} and \emph{Any} for \textbf{countable and uncountable}
+        \end{property}
+        \begin{property}
+            Some
+            \begin{itemize}
+                \item Para ofrecer cosas ó pedir cosas
+                \item Would you like \emph{some} water?
+                \item Can I have \emph{some} sugar?
+            \end{itemize}
+        \end{property}
+        \begin{property}
+            Any
+            \begin{itemize}
+               \item Se usa para preguntas en General 
+               \item Are there \emph{any} students in the class? 
+            \end{itemize}
+        \end{property}
+        \begin{example}
+            \begin{itemize}
+                \item We need \textbf{some} apples
+                \item There isn't \textbf{any} juice
+                \item The coffee needs \textbf{some} sugar
+                \item There aren't \textbf{any} students in the class
+                \item The pot doesn't have \textbf{any} salt
+                \item Do you want \textbf{some} apples?
+                \item Is there \textbf{any} of water in the bottle?
+                \item Woud you like \textbf{some} of milk?
+                \item Are there \textbf{any} animals in your house?
+            \end{itemize}
+        \end{example}
+        \section{NO OLVIDAR AGREGAR UNA PAGINA EXCLUSIVA PARA VOCABULARIO Y OTRA PARA PRONUNCIACIÓN}
+        \section{Quantifiers}
+        \begin{corollary}{}{}
+            How much + uncountable nouns\\
+            How many + plural countable nouns\\
+            A lot / lots (of) / quite a lot (of) / not much/many + noun
+        \end{corollary}
+        \begin{property}
+            \emph{How much} - Always is for singular
+        \end{property}
+        \begin{property}
+            \emph{How many} - Always is for plural
+        \end{property}
+        \vspace{0.5em}
+        \begin{tabular}{|l|}
+            \hline
+            A lot of + noun\\
+            Lots (of) +  noun\\
+            Quite a lot (of)\\
+            Not much +  noun\\
+            Not many + noun\\
+            None\\
+            \hline
+        \end{tabular}
+        \newpage
+        \begin{example}
+            \begin{itemize}
+                \item How much sugar have we got?
+                \item How much milk is there in the fridge?
+                \item How many tomatoes are there in the bag?
+                \item How many vegetables do you eat in a week?
+                \item I eat \textbf{a lot of }fruit
+                \item I don't drink \textbf{much} water
+                \item How much exercise do you do in a week?
+                \item How many glasses of water do you drink in a day?
+            \end{itemize}
+        \end{example}
+        \begin{note}
+            Use quantifiers for short answers:\\
+            How much cheese have we got? \textbf{none}
+        \end{note}
+
+
+
+
+
+        
+
+
+
+\end{document}%fin del documento
